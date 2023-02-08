@@ -13,6 +13,7 @@ const CardsBanner = () => {
         className="elnath"
         width={800}
         height={800}
+        quality={2}
         priority
       />
       <div className="cards-container">

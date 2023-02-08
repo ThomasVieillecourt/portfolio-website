@@ -49,6 +49,7 @@ const Projet = ({ projet }) => {
           className="procyon"
           width={500}
           height={500}
+          quality={2}
           priority
         />
 
@@ -62,7 +63,6 @@ const Projet = ({ projet }) => {
           width={1280}
           height={580}
           className="projet-container__miniature"
-          priority
         />
         <div className="projet-container__tech-logo">
           <Image src={projet.logo1} alt={projet.name} width={36} height={36} />
@@ -78,15 +78,41 @@ const Projet = ({ projet }) => {
         </div>
         <div className="projet-container__content">
           <h3>Fonctionnalités du projet</h3>
-          <p>{projet.fonction}</p>
+          <p className="content-text">{projet.fonction}</p>
           <Image
-            src={projet.gif_presentation}
+            src={projet.presentation}
             alt={projet.name}
             className="gifPresentation"
             width={1280}
             height={580}
-            priority
           />
+          {projet.fonction2 && (
+            <p className="content-text">{projet.fonction2}</p>
+          )}
+          {projet.presentation2 && (
+            <Image
+              src={projet.presentation2}
+              alt={projet.name}
+              className="gifPresentation"
+              width={1280}
+              height={580}
+              priority
+            />
+          )}
+
+          {projet.fonction3 && (
+            <p className="content-text">{projet.fonction3}</p>
+          )}
+          {projet.presentation3 && (
+            <Image
+              src={projet.presentation3}
+              alt={projet.name}
+              className="gifPresentation"
+              width={1280}
+              height={580}
+              priority
+            />
+          )}
 
           <h3>Challenge du projet</h3>
           <p>{projet.tools}</p>
