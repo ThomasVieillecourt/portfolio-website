@@ -1,0 +1,98 @@
+.devtools-container {
+  display: grid;
+  grid-column-start: 3;
+  grid-column-end: 11;
+  width: 100%;
+  height: auto;
+  background-color: $black;
+  border-radius: 6px;
+  margin: 6em 0 2em 0;
+  position: relative;
+
+  @media screen and (max-width: 700px) {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+
+  @media screen and (max-width: 500px) {
+    grid-column: 1 / span 6;
+  }
+
+  #competences {
+    background-color: $white;
+    color: $black;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+
+    h3 {
+      color: $black;
+    }
+
+    p {
+      color: $black;
+    }
+  }
+
+  .devtools__tech-container__each {
+    padding: 1em;
+    width: 100%;
+    @include flexColumn;
+    align-items: center;
+
+    h3 {
+      font-family: $fontText_Bold;
+      font-size: 1.2rem;
+    }
+
+    .devtools__tech-container {
+      @include flexRow;
+      align-items: flex-end;
+      gap: 3em;
+      padding: 1em 0;
+      text-align: center;
+
+      @media screen and (max-width: 1550px) {
+        gap: 2em;
+      }
+
+      @media screen and (max-width: 1280px) {
+      }
+
+      @media screen and (max-width: 1120px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      img {
+        width: 52px;
+        height: auto;
+        @media screen and (max-width: 1280px) {
+          width: 40px;
+        }
+      }
+
+      p {
+        padding-top: 4px;
+      }
+    }
+  }
+
+  .spica {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    right: 0;
+    transform: translateX(100%);
+    top: 0%;
+    z-index: -1;
+    pointer-events: none;
+
+    @media screen and (max-width: 700px) {
+      transform: translateX(50%);
+
+      height: 100%;
+      top: 0;
+      right: 0;
+    }
+  }
+}
