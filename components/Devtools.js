@@ -187,6 +187,15 @@ const Devtools = () => {
             />
             <p>Postman</p>
           </div>
+          <div>
+            <Image
+              src={path + "/img/jest.png"}
+              alt="logo jest"
+              width={60}
+              height={60}
+            />
+            <p>Jest</p>
+          </div>
         </div>
       </div>
       <div className="devtools__tech-container__each">
@@ -237,6 +246,7 @@ const Devtools = () => {
         className="spica"
         width={60}
         height={60}
+        quality={2}
         priority
       />
     </div>

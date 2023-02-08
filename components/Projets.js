@@ -83,6 +83,7 @@ const Projets = () => {
         className="procyon"
         width={32}
         height={32}
+        quality={2}
         priority
       />
     </div>

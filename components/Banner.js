@@ -15,14 +15,15 @@ const Banner = () => {
         className="archenar"
         width={450}
         height={450}
+        quality={2}
         priority
       />
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          duration: 0.8,
-          delay: 0.5,
+          duration: 0.6,
+          delay: 0.2,
           ease: [0, 0.71, 0.2, 1.01],
         }}
         className="banner-container__content"
@@ -52,8 +53,8 @@ const Banner = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
-          duration: 0.8,
-          delay: 0.5,
+          duration: 0.6,
+          delay: 0.2,
           ease: [0, 0.71, 0.2, 1.01],
         }}
         className="banner-container__sphere"

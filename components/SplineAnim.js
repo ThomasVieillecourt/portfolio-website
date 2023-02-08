@@ -57,18 +57,6 @@ const SplineAnim = () => {
       >
         <Image src={path + "/img/nextjs.svg"} alt="" width={180} height={180} />
       </motion.div>
-      {/* <img
-        src="../img/gitlab.png"
-        alt=""
-        width={100}
-        style={{ gridArea: "gitlab" }}
-      />
-      <img
-        src="../img/gitbanner.png"
-        alt=""
-        width={100}
-        style={{ gridArea: "git" }}
-      /> */}
     </div>
   );
 };
